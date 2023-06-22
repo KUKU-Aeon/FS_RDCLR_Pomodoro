@@ -1,0 +1,110 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 25%;
+}
+
+form label {
+    font-size: 2vw;
+    margin-top: 10px;
+}
+
+h1
+{
+    text-align: center;
+    font-size: 4vw;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 5px solid #000000;
+    border-radius: 4px;
+    margin: 0 25%;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    cursor: pointer;
+    border: none;
+    margin: 20px 0px 0px;
+    padding: 0px 12px;
+    border-radius: 4px;
+    box-shadow: rgb(235, 235, 235) 0px 6px 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    height: 10vh;
+    color: #000000;
+    font-weight: bold;
+    background-color: white;
+    transition: color 0.5s ease-in-out 0s;
+    outline: none;;
+}
+
+ul {
+    list-style: none;
+    margin: 0 15%;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    /* border-bottom: 1px solid #ccc; */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5vw;
+    background-color: rgba(255, 56, 56, .75);
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.completed
+{
+   background-color: rgba(56, 133, 138, 1);
+    transition: 1s ease-in-out;
+}
+
+.current
+{
+    box-shadow: 5px 5px  #000000;
+}
+
+li:last-child {
+    /* border-bottom: none; */
+}
+
+li .actions {
+    display: flex;
+    align-items: center;
+}
+
+li .actions button {
+    margin-left: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    box-shadow: rgb(235, 235, 235) 0px 6px 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    height: 3vh;
+    color: #000000;
+    font-weight: bold;
+    background-color: white;
+    transition: color 0.5s ease-in-out 0s;
+    outline: none;
+}
+
+li .actions button:active, button[type="submit"]:active
+{
+    box-shadow: none;
+    transform: translateY(6px);
+}

@@ -1,0 +1,148 @@
+
+body
+{
+    background-color: rgba(56, 133, 138, 0.75);
+    z-index: 0;
+}
+
+.labels.active
+{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    width: 50%;
+    height: 55vh;
+    bottom: 39vh;
+    left: 25vw;
+    background-color: #38858A;
+    border-radius: 4px;
+}
+
+.labels
+{
+    display: none;
+}
+
+.labels.active div
+{
+    margin: 0 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+label + input + button
+{
+    margin: 10px 0;
+}
+
+label, input + button, input
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25vw;
+    text-align: center;
+    vertical-align: center;
+}
+
+.menu_buttons
+{
+    margin: 5% 25% 0 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.timer_field
+{
+    border: none;
+    margin: 10% auto;
+    background-color: rgba(56, 133, 138, 1);
+    text-align: center;
+    vertical-align: center;
+    font-size: 5vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    width:50vw;
+    height: 50vh;
+    border-radius: 4px;
+}
+
+#timer
+{
+    top: 10%;
+    position: relative;
+}
+
+#reset
+{
+    cursor: pointer;
+    border: none;
+    margin: 15px auto;
+    padding: 0px 12px;
+    border-radius: 4px;
+    box-shadow: rgb(235, 235, 235) 0px 6px 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    height: 4vh;
+    color :#000000;
+    font-weight: bold;
+    width: 10vw;
+    background-color: white;
+    transition: color 0.5s ease-in-out 0s;
+    outline: none;
+}
+
+#option
+{
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    margin: 15px 5% 15px 18vw;
+    padding: 0px 12px;
+    border-radius: 4px;
+    box-shadow: rgb(235, 235, 235) 0px 6px 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    height: 4vh;
+    color :#000000;
+    font-weight: bold;
+    width: 4vw;
+    background-image: url("content/gear.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: #FFFFFF;
+    transition: color 0.5s ease-in-out 0s;
+    outline: none;
+    z-index: 1;
+}
+
+#option img
+{
+    margin: auto;
+    height: 100%;
+}
+
+#pause, #start
+{
+    cursor: pointer;
+    border: none;
+    margin: 20px 0px 0px;
+    padding: 0px 12px;
+    border-radius: 4px;
+    box-shadow: rgb(235, 235, 235) 0px 6px 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    height: 10vh;
+    color :#000000;
+    font-weight: bold;
+    width: 100%;
+    background-color: white;
+    transition: color 0.5s ease-in-out 0s;
+    outline: none;
+}
+
+#pause:active, #start:active, #reset:active, #option:active
+{
+    box-shadow: none;
+    transform: translateY(6px);
+}
